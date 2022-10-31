@@ -9,54 +9,84 @@ nginx 0.1.1
 nginx 0.1.2
      |
     ...
-     |
-nginx 1.5.3
-     |     \
-     |      -----------.
-     |                  \
-     |                  |
-     |             NGINX Plus R1
-     |                  |
-nginx 1.5.4             |
-     |                  |
-nginx 1.5.5             |
-     |                  |
-nginx 1.5.6             |
-     |                  |
-nginx 1.5.7             |
-     |     \            |
-     |      `----> NGINX Plus R2
-nginx 1.5.8             |
-     |                  |
-nginx 1.5.9             |
-     |                  |
-nginx 1.5.10            |
-     |                  |
-nginx 1.5.11            |
-     |                  |
-nginx 1.5.12            |
-     |     \            |
-     |      `----> NGINX Plus R3
-    ...                 |
-     |                  |
-nginx 1.7.3             |
-     |     \            |
-     |      `----> NGINX Plus R4
-     |                  |
-nginx 1.7.4             |
-     |                  |
-nginx 1.7.5             |
-     |                  |
-nginx 1.7.6             |
-     |                  |
-     |                  |
-nginx 1.7.7             |
-     |     \            |
-     |      `----> NGINX Plus R5
-     |                  |
-    ...
-     |
-nginx 1.23.2
+nginx 0.7.59
+     |   \
+     |    \
+     |     `--nginx 0.8.0
+     |             |
+     |        nginx 0.8.1
+nginx 0.7.60       |
+     |            ...
+     |             |
+     |        nginx 0.8.51
+     |             |
+     |        nginx 0.8.52
+     |             |
+     |        nginx 0.8.53
+     |             |
+     |        nginx 0.8.54
+     |             |      \
+nginx 0.9.6        |       \
+     |             |        `-----------------------> openresty
+     |             |                                   0.8.54.3
+nginx 0.9.7        |                                      |
+     |        nginx 0.8.55                                |
+     |                                                    |
+    ...                                                   |
+     |                                                    |
+nginx 1.5.3                                               |
+     |     \                                              |
+     |      `--------------------.                        |
+     |                            \                       |
+     |                             |                      |
+     |                       NGINX Plus R1                |
+     |                             |                      |
+nginx 1.5.4                        |                      |
+     |                             |                      |
+nginx 1.5.5                        |                      |
+     |                             |                      |
+nginx 1.5.6                        |                      |
+     |                             |                      |
+nginx 1.5.7                        |                      |
+     |     \                       |                      |
+     |      `--------------> NGINX Plus R2                |
+nginx 1.5.8                        |                      |
+     |                             |                      |
+nginx 1.5.9                        |                      |
+     |                             |                      |
+nginx 1.5.10                       |                      |
+     |                             |                      |
+nginx 1.5.11                       |                      |
+     |                             |                      |
+nginx 1.5.12                       |                      |
+     |     \                       |                      |
+     |      `--------------> NGINX Plus R3                |
+    ...                            |                      |
+     |                             |                      |
+nginx 1.7.3                        |                      |
+     |     \                       |                      |
+     |      `--------------> NGINX Plus R4                |
+     |                             |                      |
+nginx 1.7.4                        |                      |
+     |                             |                      |
+nginx 1.7.5                        |                      |
+     |                             |                      |
+nginx 1.7.6                        |                      |
+     |                             |                      |
+nginx 1.7.7                        |                      |
+     |     \                       |                      |
+     |      `--------------> NGINX Plus R5                |
+     |                             |                      |
+    ...                            |                      |
+     |                             |                      |
+nginx 1.11.2                       |                      |
+     |      \                      |                      |
+     |       `---------------------+----------------> openresty
+     |                             |                  1.11.2.1
+     |                             |                      |
+    ...                            |                      |
+     |                             |                      |
+nginx 1.23.2                       v                      v
      |
      |
      v
@@ -408,12 +438,18 @@ nginx-0.8.54            2010-12-14 [NGX]
 nginx-0.9.4             2011-01-21 [NGX]
 nginx-0.9.5             2011-02-21 [NGX]
 nginx-0.9.6             2011-03-21 [NGX]
+openresty-0.8.54.3      2011-03-29 [ORSF]
 nginx-0.9.7             2011-04-04 [NGX]
 nginx-1.0.0             2011-04-12 [NGX]
 nginx-1.0.1             2011-05-03 [NGX]
 nginx-1.0.2             2011-05-10 [NGX]
+openresty-0.8.54.4      2011-05-13 [ORSF]
 nginx-1.0.3             2011-05-25 [NGX]
+openresty-0.8.54.5      2011-05-25 [ORSF]
 nginx-1.0.4             2011-06-01 [NGX]
+openresty-0.8.54.6      2011-06-14 [ORSF]
+openresty-0.8.54.8      2011-06-30 [ORSF]
+openresty-0.8.54.9      2011-07-08 [ORSF]
 nginx-0.7.69            2011-07-19 [NGX]
 nginx-0.8.55            2011-07-19 [NGX]
 nginx-1.0.5             2011-07-19 [NGX]
@@ -649,5 +685,6 @@ References
 https://nginx.org/download/
 https://docs.nginx.com/nginx/releases/
 https://github.com/openresty/openresty/releases
+https://github.com/openresty/openresty/tags
 
 (c) Copyright, Sergey A. Osokin, 2022
