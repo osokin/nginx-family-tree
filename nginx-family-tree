@@ -9,13 +9,75 @@ nginx 0.1.1
 nginx 0.1.2
      |
     ...
+     |
+nginx 0.7.6
+     |
+nginx 0.7.7
+     |
+nginx 0.7.8
+     |
+nginx 0.7.9
+     |
+nginx 0.7.10
+     |
+nginx 0.7.11
+     |
+nginx 0.7.12
+     |
+nginx 0.7.13
+     |
+nginx 0.7.14
+     |
+nginx 0.7.15
+     |
+nginx 0.7.16
+     |
+nginx 0.7.17
+     |
+nginx 0.7.18
+     |
+nginx 0.7.19
+     |
+nginx 0.7.20
+     |
+nginx 0.7.21
+     |
+    ...
+     |
 nginx 0.7.59
-     |   \
-     |    \
-     |     `--nginx 0.8.0
+     |     \
+     |      `-nginx 0.8.0          |
+     |             |               |
+     |        nginx 0.8.1          |
+nginx 0.7.60       |               |
+     |        nginx 0.8.2          |
+     |             |               |
+     |        nginx 0.8.3          |
+     |             |               |
+nginx 0.7.61  nginx 0.8.4     nginx 0.6.38
+     |             |               |                ...
+     |        nginx 0.8.5          |                 |
+     |             |               |                 |
+     |        nginx 0.8.6          |                 |
+     |             |               |                 |
+     |        nginx 0.8.7          |                 |
+     |             |               |                 |
+     |        nginx 0.8.8          |                 |
+     |             |               |                 |
+     |        nginx 0.8.9          |                 |
+     |             |               |                 |
+     |        nginx 0.8.10         |                 |
+     |             |               |                 |
+     |        nginx 0.8.11         |                 |
+     |             |               |                 |
+     |        nginx 0.8.12         |                 |
+     |             |               |                 |
+     |        nginx 0.8.13         |                 |
+     |             |               |                 |
+     |        nginx 0.8.14         |                 |
+     |             |               |                 |
+nginx 0.7.62  nginx 0.8.15    nginx 0.6.39     nginx 0.5.38
      |             |
-     |        nginx 0.8.1
-nginx 0.7.60       |
      |            ...
      |             |
      |        nginx 0.8.51
@@ -25,12 +87,33 @@ nginx 0.7.60       |
      |        nginx 0.8.53
      |             |
      |        nginx 0.8.54
-     |             |      \
-nginx 0.9.6        |       \
-     |             |        `-----------------------> openresty
-     |             |                                   0.8.54.3
-nginx 0.9.7        |                                      |
-     |        nginx 0.8.55                                |
+     |             \      \
+nginx 0.9.6         \      \
+     |               \      `-----------------------> openresty
+     |                \                                0.8.54.3
+nginx 0.9.7            `----------.                       |
+     |    \                        |                      |
+     |     `--nginx 1.0.0          |                      |
+     |             |               |                      |
+     |        nginx 1.0.1          |                      |
+     |             |               |                      |
+     |        nginx 1.0.2          |                      |
+     |             |               |                  openresty
+     |             |               |                   0.8.54.4
+     |        nginx 1.0.3          |                      |
+     |             |               |                  openresty
+     |             |               |                   0.8.54.5
+     |        nginx 1.0.4          |                      |
+     |             |               |                  openresty
+     |             |               |                   0.8.54.6
+     |             |               |                      |
+     |             |               |                  openresty
+     |             |               |                   0.8.54.8
+     |             |               |                      |
+     |             |               |                  openresty
+     |             |               |                   0.8.54.9
+     |             |               |                      |
+     |        nginx 1.0.5     nginx 0.8.55                |
      |                                                    |
     ...                                                   |
      |                                                    |
