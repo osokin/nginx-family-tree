@@ -765,9 +765,24 @@ nginx-1.23.2            2022-10-19 [NGX]
 
 References
 ----------
-https://nginx.org/download/
-https://docs.nginx.com/nginx/releases/
-https://github.com/openresty/openresty/releases
-https://github.com/openresty/openresty/tags
+1. https://hg.nginx.org/nginx/
+2. https://nginx.org/download/
+3. https://docs.nginx.com/nginx/releases/
+4. https://github.com/openresty/openresty/releases
+5. https://github.com/openresty/openresty/tags
+6. https://www.f5.com/company/policies/trademarks
+7. https://openresty.com/
+
+
+Commands
+--------
+% hg log --graph -r 'tagged()’
+
+
+Trademarks
+----------
+NGINX, NGINX Plus are registered trademarks of F5 Networks, Inc. [6]
+OpenResty is a registered trademark owned by OpenResty Inc. [7]
+
 
 (c) Copyright, Sergey A. Osokin, 2022
