@@ -314,13 +314,74 @@ nginx 0.5.24
      |
 nginx 0.5.25
      |      \
-     |       `---------------------.
-     |                         nginx 0.6.0
-     |                             |                |
-    ...                           ...              ...
-     |                             |                |
-nginx 0.7.0                        |                |
-     |                             |                |
+     |       `----------------------.
+     |                        nginx 0.6.0
+nginx 0.5.26                       |
+     |                        nginx 0.6.1
+nginx 0.5.27                       |
+     |                        nginx 0.6.2
+     |                             |
+     |                        nginx 0.6.3
+nginx 0.5.28                       |
+     |                        nginx 0.6.4
+nginx 0.5.29                       |
+     |                        nginx 0.6.5
+nginx 0.5.30                       |
+     |                        nginx 0.6.6
+nginx 0.5.31                       |
+     |                        nginx 0.6.7
+     |                             |
+     |                        nginx 0.6.8
+     |                             |
+     |                        nginx 0.6.9
+     |                             |
+     |                        nginx 0.6.10
+     |                             |
+     |                        nginx 0.6.11
+     |                             |
+     |                        nginx 0.6.12
+nginx 0.5.32                       |
+     |                        nginx 0.6.13
+     |                             |
+     |                        nginx 0.6.14
+     |                             |
+     |                        nginx 0.6.15
+     |                             |
+     |                        nginx 0.6.16
+nginx 0.5.33                       |
+     |                        nginx 0.6.17
+     |                             |
+     |                        nginx 0.6.18
+     |                             |
+     |                        nginx 0.6.19
+     |                             |
+     |                        nginx 0.6.20
+     |                             |
+     |                        nginx 0.6.21
+nginx 0.5.34                       |
+     |                        nginx 0.6.22
+     |                             |
+     |                        nginx 0.6.23
+     |                             |
+     |                        nginx 0.6.24
+nginx 0.5.35                       |
+     |                        nginx 0.6.25
+     |                             |
+     |                        nginx 0.6.26
+     |                             |
+     |                        nginx 0.6.27
+     |                             |
+     |                        nginx 0.6.28
+     |                             |
+     |                        nginx 0.6.29
+     |                             |
+     |                        nginx 0.6.30
+nginx 0.5.36----.                  |
+     |           \            nginx 0.6.31
+     |            \                |
+     |             `---------------+-------------.
+nginx 0.7.0                        |              \
+     |                             |               \
 nginx 0.7.1                        |                |
      |                             |                |
 nginx 0.7.2                        |                |
@@ -560,12 +621,58 @@ nginx 1.11.2                       |                      |
      |       `---------------------+----------------> openresty
      |                             |                  1.11.2.1
      |                             |                      |
-    ...                            |                      |
+    ...                           ...                    ...
      |                             |                      |
-nginx 1.23.2                       v                      v
-     |
-     |
-     v
+nginx 1.21.0                       |                      |
+     |                             |                      |
+nginx 1.21.1                       |                      |
+     |                             |                      |
+nginx 1.21.2                       |                      |
+     |                             |                      |
+nginx 1.21.3                       |                      |
+     |     \                       |                      |
+     |      `--------------> NGINX Plus R25               |
+     |                             |                      |
+nginx 1.21.4                       |                      |
+     |                             |                      |
+nginx 1.21.5                       |                      |
+     |     \                       |                      |
+     |      `--------------> NGINX Plus R26               |
+     |                             |                      |
+nginx 1.21.6                       |                      |
+     |    |\                       |                      |
+     |    | `--------------> NGINX Plus R27               |
+     |    \                        |                      |
+     |     `----nginx 1.22.0       |                      |
+     |               |             |                      |
+nginx 1.23.0         |             |                      |
+     |               |             |                      |
+nginx 1.23.1         |             |                      |
+     |               |             |                      |
+nginx 1.23.2    nginx-1.22.1       |                      |
+     |     |                       |                      |
+     |     \                       |                      |
+     |      `--------------> NGINX Plus R28               |
+     |                             |                      |
+nginx 1.23.3                       |                      |
+     |                             |                      |
+nginx 1.23.4                       |                      |
+     |    |\                       |                      |
+     |    | `--------------> NGINX Plus R29               |
+     |    \                        |                      |
+     |     `---nginx 1.24.0        |                      |
+     |              |              |                      |
+     |              v              |                      |
+     |                             |                      |
+nginx 1.25.0                       |                      |
+     |                             |                      |
+nginx 1.25.1                       |                      |
+     |     \                       |                      |
+     |      `--------------> NGINX Plus R30               |
+     |                             |                      |
+nginx 1.25.2                       |                      |
+     |                             |                      |
+     v                             v                      v
 nginx mainline
 
 
@@ -1144,16 +1251,28 @@ nginx-1.21.1            2021-07-06 [NGX]
 openresty-1.19.9.1      2021-08-05 [ORSF]
 nginx-1.21.2            2021-08-31 [NGX]
 nginx-1.21.3            2021-09-07 [NGX]
+nginx Plus R25          2021-09-28 [NGXI]
 nginx-1.21.4            2021-11-02 [NGX]
 nginx-1.20.2            2021-11-16 [NGX]
 nginx-1.21.5            2021-12-28 [NGX]
 nginx-1.21.6            2022-01-25 [NGX]
+nginx Plus R26          2022-02-15 [NGXI]
 openresty-1.21.4.1      2022-05-13 [ORSF]
 nginx-1.22.0            2022-05-24 [NGX]
 nginx-1.23.0            2022-06-21 [NGX]
+nginx Plus R27          2022-06-28 [NGXI]
 nginx-1.23.1            2022-07-19 [NGX]
 nginx-1.22.1            2022-10-19 [NGX]
 nginx-1.23.2            2022-10-19 [NGX]
+nginx Plus R28          2022-11-29 [NGXI]
+nginx-1.23.3            2022-12-13 [NGX]
+nginx-1.23.4            2023-03-28 [NGX]
+nginx-1.24.0            2023-04-11 [NGX]
+nginx Plus R29          2023-05-02 [NGXI]
+nginx-1.25.0            2023-05-23 [NGX]
+nginx-1.25.1            2023-06-13 [NGX]
+nginx-1.25.2            2023-08-15 [NGX]
+nginx Plus R30          2023-08-15 [NGXI]
 
 
 References
