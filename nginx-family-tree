@@ -634,10 +634,13 @@ nginx 1.21.3                       |                      |
      |      `--------------> NGINX Plus R25               |
      |                             |                      |
 nginx 1.21.4                       |                      |
-     |                             |                      |
-nginx 1.21.5                       |                      |
-     |     \                       |                      |
-     |      `--------------> NGINX Plus R26               |
+     |      \                      |                      |
+     |       `---------------------+-----------.          |
+     |                             |            \         |
+nginx 1.21.5                       |             \        |
+     |     \                       |              \       |
+     |      `--------------> NGINX Plus R26        \      |
+     |                             |              openresty-1.21.4.1
      |                             |                      |
 nginx 1.21.6                       |                      |
      |    |\                       |                      |
@@ -657,8 +660,8 @@ nginx 1.23.2    nginx-1.22.1       |                      |
 nginx 1.23.3                       |                      |
      |                             |                      |
 nginx 1.23.4                       |                      |
-     |    |\                       |                      |
-     |    | `--------------> NGINX Plus R29               |
+     |   | \                       |                      |
+     |   |  `--------------> NGINX Plus R29               |
      |    \                        |                      |
      |     `---nginx 1.24.0        |                      |
      |              |              |                      |
@@ -667,6 +670,8 @@ nginx 1.23.4                       |                      |
 nginx 1.25.0                       |                      |
      |                             |                      |
 nginx 1.25.1                       |                      |
+     |    |                        |                      |
+     |    |                        |              openresty-1.21.4.2
      |     \                       |                      |
      |      `--------------> NGINX Plus R30               |
      |                             |                      |
@@ -1271,8 +1276,16 @@ nginx-1.24.0            2023-04-11 [NGX]
 nginx Plus R29          2023-05-02 [NGXI]
 nginx-1.25.0            2023-05-23 [NGX]
 nginx-1.25.1            2023-06-13 [NGX]
+openresty-1.21.4.2      2023-07-19 [ORSF]
 nginx-1.25.2            2023-08-15 [NGX]
 nginx Plus R30          2023-08-15 [NGXI]
+
+
+Time
+----------
+[NGX] nginx.org
+[NGXI] NGINX Inc.
+[ORSF] OpenResty
 
 
 References
@@ -1284,6 +1297,7 @@ References
 5. https://github.com/openresty/openresty/tags
 6. https://www.f5.com/company/policies/trademarks
 7. https://openresty.com/
+8. https://openresty.org/
 
 
 Commands
@@ -1297,4 +1311,4 @@ NGINX, NGINX Plus are registered trademarks of F5 Networks, Inc. [6]
 OpenResty is a registered trademark owned by OpenResty Inc. [7]
 
 
-(c) Copyright, Sergey A. Osokin, 2022
+(c) Copyright, Sergey A. Osokin, 2022, 2023
