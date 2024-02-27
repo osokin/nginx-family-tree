@@ -677,13 +677,22 @@ nginx 1.25.1                       |                      |
      |                             |                      |
 nginx 1.25.2                       |                      |
      |                             |                      |
+nginx 1.25.3                       |                      |
+     |   | \                       |                      |
+     |   |  `-------------------------------------.       |
+     |   \                         |               \      |
+     |     `--------------> NGINX Plus R31          \     |
+     |                             |              openresty-1.25.3.1
+     |                             |                      |
+nginx 1.25.4                       |                      |
+     |                             |                      |
      v                             v                      v
 nginx mainline
 
 
 [NGX]    nginx.org
-[NGXI]   NGINX, Inc
-[F5]     F5, Inc
+[NGXI]   NGINX, Inc., https://nginx.com
+[F5]     F5, Inc., https://f5.com
 [ORSF]   OpenResty Software Foundation
 
 nginx-0.1.0             2004-10-05 [NGX]
@@ -1279,6 +1288,10 @@ nginx-1.25.1            2023-06-13 [NGX]
 openresty-1.21.4.2      2023-07-19 [ORSF]
 nginx-1.25.2            2023-08-15 [NGX]
 nginx Plus R30          2023-08-15 [NGXI]
+nginx-1.25.3            2023-10-24 [NGX]
+nginx Plus R31          2023-12-19 [NGXI]
+openresty-1.25.3.1      2024-01.05 [ORSF]
+nginx-1.25.4            2024-02-14 [NGX]
 
 
 Time
@@ -1292,12 +1305,22 @@ References
 ----------
 1. https://hg.nginx.org/nginx/
 2. https://nginx.org/download/
-3. https://docs.nginx.com/nginx/releases/
-4. https://github.com/openresty/openresty/releases
-5. https://github.com/openresty/openresty/tags
-6. https://www.f5.com/company/policies/trademarks
-7. https://openresty.com/
-8. https://openresty.org/
+3. https://nginx.com
+4. https://docs.nginx.com/nginx/releases/
+5. https://github.com/openresty/openresty/releases
+6. https://github.com/openresty/openresty/tags
+7. https://www.f5.com/company/policies/trademarks
+8. https://openresty.com/
+9. https://openresty.org/
+
+Mailing lists
+-------------
+TBD
+
+
+Repositories
+-------------
+TBD
 
 
 Commands
@@ -1311,4 +1334,4 @@ NGINX, NGINX Plus are registered trademarks of F5 Networks, Inc. [6]
 OpenResty is a registered trademark owned by OpenResty Inc. [7]
 
 
-(c) Copyright, Sergey A. Osokin, 2022, 2023
+(c) Copyright, Sergey A. Osokin, 2022, 2023, 2024
