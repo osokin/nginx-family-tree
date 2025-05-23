@@ -635,12 +635,13 @@ nginx 1.21.3                       |                      |
      |                             |                      |
 nginx 1.21.4                       |                      |
      |      \                      |                      |
-     |       `---------------------+-----------.          |
-     |                             |            \         |
-nginx 1.21.5                       |             \        |
-     |     \                       |              \       |
-     |      `--------------> NGINX Plus R26        \      |
-     |                             |              openresty-1.21.4.1
+     |       `---------------------+---------------.      |
+     |                             |                \     |
+nginx 1.21.5                       |                 \    |
+     |     \                       |                  \   |
+     |      `--------------> NGINX Plus R26            \  |
+     |                             |                  openresty
+     |                             |                  1.21.4.1
      |                             |                      |
 nginx 1.21.6                       |                      |
      |    |\                       |                      |
@@ -671,7 +672,8 @@ nginx 1.25.0                       |                      |
      |                             |                      |
 nginx 1.25.1                       |                      |
      |    |                        |                      |
-     |    |                        |              openresty-1.21.4.2
+     |    |                        |                  openresty
+     |    \                        |                  1.21.4.2
      |     \                       |                      |
      |      `--------------> NGINX Plus R30               |
      |                             |                      |
@@ -679,14 +681,18 @@ nginx 1.25.2                       |                      |
      |                             |                      |
 nginx 1.25.3                       |                      |
      |   | \                       |                      |
-     |   |  `-------------------------------------.       |
-     |   \                         |               \      |
+     |   |  `----------------------+--------------.       |
+     |   `.                        |               \      |
      |     `--------------> NGINX Plus R31          \     |
      |                             |              openresty-1.25.3.1
      |                             |                      |
-nginx 1.25.4                       |                      |
-     |                             |                      |
-     v                             v                      v
+     |`----------------------------+----------------------+-----------------.
+     |                             |                      |                  `.
+nginx 1.25.4                       |                      |                   |
+     |                             |                      |               freenginx
+     |                             |                      |                1.25.4
+     |                             |                      |                   |
+     v                             v                      v                   v
 nginx mainline
 
 
@@ -694,6 +700,7 @@ nginx mainline
 [NGXI]   NGINX, Inc., https://nginx.com
 [F5]     F5, Inc., https://f5.com
 [ORSF]   OpenResty Software Foundation
+[FREE]   freenginx.org
 
 nginx-0.1.0             2004-10-05 [NGX]
 nginx-0.1.1             2004-10-11 [NGX]
@@ -1292,6 +1299,7 @@ nginx-1.25.3            2023-10-24 [NGX]
 nginx Plus R31          2023-12-19 [NGXI]
 openresty-1.25.3.1      2024-01.05 [ORSF]
 nginx-1.25.4            2024-02-14 [NGX]
+freenginx-1.25.4        2024-02-20 [FREE]
 
 
 Time
@@ -1299,28 +1307,34 @@ Time
 [NGX] nginx.org
 [NGXI] NGINX Inc.
 [ORSF] OpenResty
+[FREE] freenginx.org
 
 
 References
 ----------
 1. https://hg.nginx.org/nginx/
-2. https://nginx.org/download/
-3. https://nginx.com
-4. https://docs.nginx.com/nginx/releases/
-5. https://github.com/openresty/openresty/releases
-6. https://github.com/openresty/openresty/tags
-7. https://www.f5.com/company/policies/trademarks
-8. https://openresty.com/
-9. https://openresty.org/
+2. https://nginx.org/
+3. https://nginx.org/download/
+4. https://nginx.com/
+5. https://docs.nginx.com/nginx/releases/
+6. https://github.com/openresty/openresty/releases
+7. https://github.com/openresty/openresty/tags
+8. https://www.f5.com/company/policies/trademarks
+9. https://openresty.com/
+10. https://openresty.org/
+11. https://freenginx.org/
+
 
 Mailing lists
 -------------
-TBD
+https://mailman.nginx.org/nginx
+https://mailman.nginx.org/nginx-announce
+https://mailman.nginx.org/nginx-devel
 
 
 Repositories
 -------------
-TBD
+https://hg.nginx.org/nginx/
 
 
 Commands
@@ -1330,8 +1344,8 @@ Commands
 
 Trademarks
 ----------
-NGINX, NGINX Plus are registered trademarks of F5 Networks, Inc. [6]
-OpenResty is a registered trademark owned by OpenResty Inc. [7]
+NGINX, NGINX Plus are registered trademarks of F5 Networks, Inc. [7]
+OpenResty is a registered trademark owned by OpenResty Inc. [8]
 
 
 (c) Copyright, Sergey A. Osokin, 2022, 2023, 2024
