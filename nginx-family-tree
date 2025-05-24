@@ -654,20 +654,20 @@ nginx 1.23.0         |             |                      |
 nginx 1.23.1         |             |                      |
      |               |             |                      |
 nginx 1.23.2    nginx-1.22.1       |                      |
-     |     |                       |                      |
+     |     |         |             |                      |
+     |     |         v             |                      |
      |     \                       |                      |
      |      `--------------> NGINX Plus R28               |
      |                             |                      |
 nginx 1.23.3                       |                      |
      |                             |                      |
 nginx 1.23.4                       |                      |
-     |   | \                       |                      |
-     |   |  `--------------> NGINX Plus R29               |
+     |  \  \                       |                      |
+     |   \  `--------------> NGINX Plus R29               |
      |    \                        |                      |
      |     `---nginx 1.24.0        |                      |
      |              |              |                      |
      |              v              |                      |
-     |                             |                      |
 nginx 1.25.0                       |                      |
      |                             |                      |
 nginx 1.25.1                       |                      |
@@ -708,13 +708,15 @@ nginx 1.27.0   nginx 1.26.1        |                      |                   |
      |              |              |                      |                   |
      |              |              |                      |               freenginx
      |              |              |                      |                1.27.2
-     |              |              |                      |                   |
+     |              |              |              openresty-1.25.3.2          |
      |              |              |                      |               freenginx
      |              |              |                      |                1.27.3
 nginx 1.27.1   nginx 1.26.2        |                      |                   |
-     |              |              |                      |               freenginx
-     |              |              |                      |                1.27.4
-nginx 1.27.2        |              |                      |                   |
+     |     \        |              |                      |               freenginx
+     |      `------------------------------------.        |                1.27.4
+nginx 1.27.2        |              |              \       |                   |
+     |   \          |              |               \      |                   |
+     |    \         |              |              openresty-1.27.1.1          |
      |     \        |              |                      |                   |
      |      `--------------> NGINX Plus R33               |                   |
      |              |              |                      |                   |
@@ -725,6 +727,9 @@ nginx 1.27.4   nginx 1.26.3        |                      |                   |
      |    \         v              |                      |                   |
      |     \                       |                      |                   |
      |      `--------------> NGINX Plus R34               |                   |
+     |                             |              openresty-1.27.1.2          |
+     |                             |                      |                   |
+     |                             |                      |                   |
      |                             |                      |               freenginx
      |                             |                      |                1.27.5
      |                             |                      |                   |
@@ -1341,7 +1346,7 @@ nginx-1.25.2            2023-08-15 [NGX]
 nginx Plus R30          2023-08-15 [NGXI]
 nginx-1.25.3            2023-10-24 [NGX]
 nginx Plus R31          2023-12-19 [NGXI]
-openresty-1.25.3.1      2024-01.05 [ORSF]
+openresty-1.25.3.1      2024-01-05 [ORSF]
 nginx-1.25.4            2024-02-14 [NGX]
 freenginx-1.25.4        2024-02-20 [FREE]
 freenginx-1.25.5        2024-04-02 [FREE]
@@ -1353,15 +1358,18 @@ nginx-1.26.1            2024-05-29 [NGX]
 nginx Plus R32          2024-05-29 [NGXI]
 freenginx-1.27.1        2024-06-04 [FREE]
 freenginx-1.27.2        2024-07-09 [FREE]
+openresty-1.25.3.2      2024-07-21 [ORSF]
 freenginx-1.27.3        2024-08-13 [FREE]
 nginx-1.27.1            2024-08-14 [NGX]
 nginx-1.26.2            2024-08-14 [NGX]
 freenginx-1.27.4        2024-08-13 [FREE]
 nginx-1.27.2            2024-10-02 [NGX]
+openresty-1.27.1.1      2024-10-17 [ORSF]
 nginx Plus R33          2024-11-19 [NGXI]
 nginx-1.27.3            2024-11-26 [NGX]
 nginx-1.27.4            2025-02-25 [NGX]
 nginx Plus R34          2025-04-01 [NGXI]
+openresty-1.27.1.2      2025-04-03 [ORSF]
 freenginx-1.27.5        2025-04-08 [FREE]
 freenginx-1.27.6        2025-04-15 [FREE]
 nginx-1.27.5            2025-04-16 [NGX]
