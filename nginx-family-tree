@@ -1312,7 +1312,7 @@ Time
 
 References
 ----------
-1. https://hg.nginx.org/nginx/
+1. https://github.com/nginx/nginx/
 2. https://nginx.org/
 3. https://nginx.org/download/
 4. https://nginx.com/
@@ -1348,4 +1348,4 @@ NGINX, NGINX Plus are registered trademarks of F5 Networks, Inc. [7]
 OpenResty is a registered trademark owned by OpenResty Inc. [8]
 
 
-(c) Copyright, Sergey A. Osokin, 2022, 2023, 2024
+(c) Copyright, Sergey A. Osokin, 2022, 2023, 2024, 2025
