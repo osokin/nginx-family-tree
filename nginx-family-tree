@@ -692,7 +692,51 @@ nginx 1.25.4                       |                      |                   |
      |                             |                      |               freenginx
      |                             |                      |                1.25.4
      |                             |                      |                   |
-     v                             v                      v                   v
+     |                             |                      |               freenginx
+     |                             |                      |                1.25.5
+nginx 1.25.5                       |                      |                   |
+     |   | \                       |                      |                   |
+     |   |  `--------------> NGINX Plus R32               |                   |
+     |    \                        |                      |                   |
+     |     `---nginx 1.26.0        |                      |                   |
+     |              |              |                      |               freenginx
+     |              |              |                      |                1.27.0
+     |              |              |                      |                   |
+nginx 1.27.0   nginx 1.26.1        |                      |                   |
+     |              |              |                      |               freenginx
+     |              |              |                      |                1.27.1
+     |              |              |                      |                   |
+     |              |              |                      |               freenginx
+     |              |              |                      |                1.27.2
+     |              |              |                      |                   |
+     |              |              |                      |               freenginx
+     |              |              |                      |                1.27.3
+nginx 1.27.1   nginx 1.26.2        |                      |                   |
+     |              |              |                      |               freenginx
+     |              |              |                      |                1.27.4
+nginx 1.27.2        |              |                      |                   |
+     |     \        |              |                      |                   |
+     |      `--------------> NGINX Plus R33               |                   |
+     |              |              |                      |                   |
+nginx 1.27.3        |              |                      |                   |
+     |              |              |                      |                   |
+nginx 1.27.4   nginx 1.26.3        |                      |                   |
+     |   \          |              |                      |                   |
+     |    \         v              |                      |                   |
+     |     \                       |                      |                   |
+     |      `--------------> NGINX Plus R34               |                   |
+     |                             |                      |               freenginx
+     |                             |                      |                1.27.5
+     |                             |                      |                   |
+     |                             |                      |               freenginx
+     |                             |                      |                1.27.6
+nginx 1.27.5                       |                      |                   |  \
+     |   \                         |                      |                   |   `--freenginx
+     |    \                        |                      |                   |        1.28.0
+     |     `--nginx 1.28.0         |                      |                   |
+     |              |              |                      |                   |
+     |              |              |                      |                   |
+     v              v              v                      v                   v
 nginx mainline
 
 
@@ -1300,6 +1344,29 @@ nginx Plus R31          2023-12-19 [NGXI]
 openresty-1.25.3.1      2024-01.05 [ORSF]
 nginx-1.25.4            2024-02-14 [NGX]
 freenginx-1.25.4        2024-02-20 [FREE]
+freenginx-1.25.5        2024-04-02 [FREE]
+nginx-1.25.5            2024-04-16 [NGX]
+nginx-1.26.0            2024-04-23 [NGX]
+freenginx-1.27.0        2024-05-14 [FREE]
+nginx-1.27.0            2024-05-29 [NGX]
+nginx-1.26.1            2024-05-29 [NGX]
+nginx Plus R32          2024-05-29 [NGXI]
+freenginx-1.27.1        2024-06-04 [FREE]
+freenginx-1.27.2        2024-07-09 [FREE]
+freenginx-1.27.3        2024-08-13 [FREE]
+nginx-1.27.1            2024-08-14 [NGX]
+nginx-1.26.2            2024-08-14 [NGX]
+freenginx-1.27.4        2024-08-13 [FREE]
+nginx-1.27.2            2024-10-02 [NGX]
+nginx Plus R33          2024-11-19 [NGXI]
+nginx-1.27.3            2024-11-26 [NGX]
+nginx-1.27.4            2025-02-25 [NGX]
+nginx Plus R34          2025-04-01 [NGXI]
+freenginx-1.27.5        2025-04-08 [FREE]
+freenginx-1.27.6        2025-04-15 [FREE]
+nginx-1.27.5            2025-04-16 [NGX]
+freenginx-1.28.0        2025-04-22 [FREE]
+nginx-1.28.0            2025-04-23 [NGX]
 
 
 Time
