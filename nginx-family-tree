@@ -1410,6 +1410,15 @@ https://mailman.nginx.org/nginx-devel
 Repositories
 -------------
 https://hg.nginx.org/nginx/
+https://github.com/nginx/nginx/
+https://github.com/openresty/openresty/
+http://freenginx.org/hg/nginx
+
+
+Derivatives
+-----------
+Kong - https://konghq.com/
+Tengine - https://tengine.taobao.org/
 
 
 Commands
@@ -1419,8 +1428,8 @@ Commands
 
 Trademarks
 ----------
-NGINX, NGINX Plus are registered trademarks of F5 Networks, Inc. [7]
-OpenResty is a registered trademark owned by OpenResty Inc. [8]
+NGINX, NGINX Plus are registered trademarks of F5 Networks, Inc. [8]
+OpenResty is a registered trademark owned by OpenResty Inc. [9]
 
 
 (c) Copyright, Sergey A. Osokin, 2022, 2023, 2024, 2025
